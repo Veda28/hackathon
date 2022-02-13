@@ -15,6 +15,46 @@ border-color:red;
 font-size:30px;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+  
+  
+  
+
 @media only screen and (max-width:720px){
 img,div{
 width:100%;
@@ -23,6 +63,33 @@ height:100%;
 </style>
 </head>
 <body> 
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#one">Arrays</a>
+  <a href="#two">Strings</a>
+  <a href="#three">LinkedLists</a>
+  <a href="#four">Stacks</a>
+  <a href="#five">Searching Techniques</a>
+  <a href="#six">Sorting Techniques</a>
+  <a href="#seven">Queues</a>
+  <a href="#eight">Trees</a>
+  <a href="#nine">Graphs</a>
+</div>
+<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Topics</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script> 
+  
+  
+  
+  
 <h1>Best Resources For Data Structures </h1>
 Are you confused from where to learn dsa and are you unable to choose good resources???In this website we are providing the best resources collected from various websites for dsa topic wise and also with the questions to practice.</br>
 <h3>What is Data Structure?</h3>
